@@ -1,0 +1,36 @@
+# 🔒 Common logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 🚫 Node dependencies (both frontend and backend)
+**/node_modules/
+
+# ⚙️ Build files
+**/dist/
+**/dist-ssr/
+**/build/
+
+# 🔐 Env files
+**/.env
+
+# 🧪 Test coverage
+coverage/
+
+# ⚠️ OS / Editor / IDE stuff
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 🧾 Dataset (optional if large or private)
+backend/data/megaGymDataset.csv

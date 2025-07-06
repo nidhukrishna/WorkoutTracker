@@ -1,0 +1,54 @@
+.recommendation-page {
+  padding: 2rem;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  height: calc(100vh - 100px);
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.muscle-column {
+  min-width: 300px;
+  max-width: 320px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.exercise-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.start-workout-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.start-workout-btn:hover {
+  background-color: #005fcc;
+}

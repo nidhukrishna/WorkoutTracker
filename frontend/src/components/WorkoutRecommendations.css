@@ -1,0 +1,47 @@
+/* WorkoutRecommendation.css */
+
+.page-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+.muscle-section {
+  margin-bottom: 3rem;
+}
+
+.muscle-section h2 {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #0077ff;
+  font-size: 1.5rem;
+}
+
+.exercise-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.exercise-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.exercise-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.exercise-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
