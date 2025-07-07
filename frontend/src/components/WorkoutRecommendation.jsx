@@ -59,7 +59,7 @@ const WorkoutRecommendation = () => {
     <div className="recommendation-page">
       <div className="header-row">
         <h2>Recommended Workout for You</h2>
-        <button className="start-workout-btn" onClick={() => navigate('/logworkout')}>
+        <button className="start-workout-btn" onClick={() => navigate('/logworkout', { state: recommendations })}>
           Start Workout
         </button>
       </div>

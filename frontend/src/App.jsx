@@ -6,6 +6,7 @@ import MoodEnergyForm from './components/MoodEnergyForm';
 import SleepSorenessForm from './components/SleepSorenessForm';
 import MuscleGroupForm from './components/MuscleGroupForm';
 import WorkoutRecommendation from './components/WorkoutRecommendation';
+import LogWorkout from './components/LogWorkout';
 
 function App() {
   const [userData, setUserData] = useState({});
@@ -45,6 +46,7 @@ function App() {
           }
         />
         <Route path="/recommendations" element={<WorkoutRecommendation />} />
+        <Route path="/logworkout" element={<LogWorkout />} />
       </Routes>
     </div>
   );
