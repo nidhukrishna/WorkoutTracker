@@ -7,11 +7,12 @@ import SleepSorenessForm from './components/SleepSorenessForm';
 import MuscleGroupForm from './components/MuscleGroupForm';
 import WorkoutRecommendation from './components/WorkoutRecommendation';
 import LogWorkout from './components/LogWorkout';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   const [userData, setUserData] = useState({});
   const [stage, setStage] = useState('mood');
-
   const navigate = useNavigate();
 
   const handleMoodSubmit = (data) => {
@@ -29,14 +30,19 @@ function App() {
   const handleMuscleSubmit = (data) => {
     const fullData = { ...userData, ...data };
     setUserData(fullData);
-    navigate('/recommendations', { state: fullData }); // send all info to /recommendations
+    navigate('/recommendations', { state: fullData });
   };
 
   return (
     <div className="App">
       <Routes>
+        {/* 🔐 Auth routes */}
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        {/* 💪 Workout input flow */}
         <Route
-          path="/"
+          path="/workout-flow"
           element={
             <>
               {stage === 'mood' && <MoodEnergyForm onSubmit={handleMoodSubmit} />}
@@ -45,6 +51,8 @@ function App() {
             </>
           }
         />
+
+        {/* 🏋️ Other routes */}
         <Route path="/recommendations" element={<WorkoutRecommendation />} />
         <Route path="/logworkout" element={<LogWorkout />} />
       </Routes>

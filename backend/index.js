@@ -13,10 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB connected'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
@@ -26,6 +23,9 @@ app.use('/api/user-data', userDataRoute);
 
 const recRoute = require('./routes/recommendations');
 app.use('/api/recommendations', recRoute);
+
+const authRoutes = require('./routes/auth');
+app.use('/api/auth', authRoutes);
 
 // Test route
 app.get('/', (req, res) => {
