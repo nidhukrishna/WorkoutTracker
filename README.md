@@ -7,11 +7,19 @@ This is a full-stack web application designed to be a personal workout companion
 ## Features
 
 * **User Authentication**: Secure user registration and login functionality.
+* <img width="1656" height="717" alt="image" src="https://github.com/user-attachments/assets/c2946c0f-0264-46c7-949b-7b73093b6568" />
+
 * **Personalized Workout Recommendations**: Get workout suggestions tailored to your daily physical and mental state. The recommendation engine considers:
     * Mood and energy levels
     * Muscle soreness and sleep duration
     * Targeted muscle groups
+    * <img width="1093" height="771" alt="image" src="https://github.com/user-attachments/assets/a6b32a54-971f-40ac-bf32-7f7fe162c4ea" />
+
+    * <img width="1648" height="985" alt="image" src="https://github.com/user-attachments/assets/a30f2a09-423f-46af-887d-3087d6587f9b" />
+
 * **Workout Logging**: Easily log your exercises, including sets, reps, and weights. (In progress)
+* <img width="1682" height="995" alt="image" src="https://github.com/user-attachments/assets/45d13f02-280f-4d80-8ac3-bb8e0b0e287d" />
+
 * **Dynamic User Interface**: A responsive and user-friendly interface built with React.
 
 ---
